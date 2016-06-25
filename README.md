@@ -1,28 +1,16 @@
-== README
+# Sample Application to use Spotify web API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Hosted at
+[*Spotify Test App*](https://shrouded-scrubland-42887.herokuapp.com/)
+by [Harsh Singh](https://twitter.com/harshs08).
 
-Things you may want to cover:
+## Basic Functionalities:
 
-* Ruby version
+1. Authenticate a user via Spotify Web API.
+2. Once authenticated reads a users playlist and populate the Playlist database.
+3. The population of Playlist database is done in Background via `Resque`.
+4. User and Playlist have the relation of `has_many` `through`.
+5. The app is hosted on heroku.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+## Future work:
+1. Store the songs in the user's playlist also in database and associate them to users via playlist.
