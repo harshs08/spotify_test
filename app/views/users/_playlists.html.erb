@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="table-responsive">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name (click to open)</th>
+        <th>Album Art</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% playlists.each do |playlist| %>
+        <tr>
+          <td><%= playlist.pid %></td>
+          <td><%= link_to "#{playlist.name}", playlist.external_urls, target: "_blank" %></td>
+          <td><%= image_tag(playlist.playlist_image, size: "70x80", alt: "#{playlist.name}") %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  </div>
+</div>

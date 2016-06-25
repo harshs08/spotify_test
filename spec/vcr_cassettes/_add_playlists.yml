@@ -1,0 +1,402 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://accounts.spotify.com/api/token
+    body:
+      encoding: US-ASCII
+      string: refresh_token=AQBbvDQSEAJgb7FGjJrm0dhTboqw0PMEZSU9hnWG6W1S8e7eCzdusDXRjKSIrOvUt8EHweCPu2B8GUEmCa7WtgmunaxN4SOtlUyBNS73fkzrK6W_kQaEO_E1fIchsgT7iwg&client_id=51df95ae52434030a208c69646a1fadb&client_secret=7538fbae22024bdfa9b0da88c3326ad4&grant_type=refresh_token
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - accounts.spotify.com
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 24 Jun 2016 23:07:09 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=10
+      Vary:
+      - Accept-Encoding
+      X-Ua-Compatible:
+      - IE=edge
+      X-Frame-Options:
+      - deny
+      Content-Security-Policy:
+      - 'default-src ''self''; script-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net
+        https://www.google-analytics.com; img-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net
+        https://i.imgur.com https://d2mv8tnci56s9d.cloudfront.net https://aci.scdn.co
+        https://graph.facebook.com https://fbcdn-profile-a.akamaihd.net https://scontent.xx.fbcdn.net
+        https://www.google-analytics.com https://stats.g.doubleclick.net data: d2d1dxiu3v1f2i.cloudfront.net;
+        font-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net https://sp-bootstrap.global.ssl.fastly.net;
+        style-src ''self'' ''unsafe-inline'' https://d2d1dxiu3v1f2i.cloudfront.net;
+        frame-src ''self'' https://www.spotify.com;'
+      X-Content-Security-Policy:
+      - 'default-src ''self''; script-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net
+        https://www.google-analytics.com; img-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net
+        https://i.imgur.com https://d2mv8tnci56s9d.cloudfront.net https://aci.scdn.co
+        https://graph.facebook.com https://fbcdn-profile-a.akamaihd.net https://scontent.xx.fbcdn.net
+        https://www.google-analytics.com https://stats.g.doubleclick.net data: d2d1dxiu3v1f2i.cloudfront.net;
+        font-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net https://sp-bootstrap.global.ssl.fastly.net;
+        style-src ''self'' ''unsafe-inline'' https://d2d1dxiu3v1f2i.cloudfront.net;
+        frame-src ''self'' https://www.spotify.com;'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"access_token":"BQBG7tkWMytOq8KiDiCUJoN9Psqdp6oe_OEZD4xt7SBe1gkzxxPxfHxxtsjLOMoB6hX-PP5KTmGPQc9zYqR4FWZDs3AsO3oY8UnKgv-L-llC2eVlCC8o5PobaOfmqBWSvKveSqHCfHWMRpoRgBwaqYVH1cuefGvNHvKlGZp-KT5DRSk","token_type":"Bearer","expires_in":3600}'
+    http_version: 
+  recorded_at: Fri, 24 Jun 2016 23:07:09 GMT
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/users/1295355766/playlists?limit=20&offset=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer BQBG7tkWMytOq8KiDiCUJoN9Psqdp6oe_OEZD4xt7SBe1gkzxxPxfHxxtsjLOMoB6hX-PP5KTmGPQc9zYqR4FWZDs3AsO3oY8UnKgv-L-llC2eVlCC8o5PobaOfmqBWSvKveSqHCfHWMRpoRgBwaqYVH1cuefGvNHvKlGZp-KT5DRSk
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 24 Jun 2016 23:07:10 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=600
+      Cache-Control:
+      - public, max-age=0
+      Etag:
+      - '"95f5d32796679334c23261b553fba48f"'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Origin, Content-Type
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000;
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "href" : "https://api.spotify.com/v1/users/1295355766/playlists?offset=0&limit=20",
+          "items" : [ {
+            "collaborative" : false,
+            "external_urls" : {
+              "spotify" : "http://open.spotify.com/user/olliegv1/playlist/0hH9e93dZkkMvlDpGTVHWE"
+            },
+            "href" : "https://api.spotify.com/v1/users/olliegv1/playlists/0hH9e93dZkkMvlDpGTVHWE",
+            "id" : "0hH9e93dZkkMvlDpGTVHWE",
+            "images" : [ {
+              "height" : 640,
+              "url" : "https://mosaic.scdn.co/640/d103126d5d870ee1f315912d28425df54958d79fc136a0b3f81b2df3aed553baaf288ffee48be599dc4e963769032fba06cc35cd847d95e7579e55c917ba0af273b74b8bc2a0d5865066e701afbac011",
+              "width" : 640
+            }, {
+              "height" : 300,
+              "url" : "https://mosaic.scdn.co/300/d103126d5d870ee1f315912d28425df54958d79fc136a0b3f81b2df3aed553baaf288ffee48be599dc4e963769032fba06cc35cd847d95e7579e55c917ba0af273b74b8bc2a0d5865066e701afbac011",
+              "width" : 300
+            }, {
+              "height" : 60,
+              "url" : "https://mosaic.scdn.co/60/d103126d5d870ee1f315912d28425df54958d79fc136a0b3f81b2df3aed553baaf288ffee48be599dc4e963769032fba06cc35cd847d95e7579e55c917ba0af273b74b8bc2a0d5865066e701afbac011",
+              "width" : 60
+            } ],
+            "name" : "Game of Thrones Soundtrack (All Seasons) ",
+            "owner" : {
+              "external_urls" : {
+                "spotify" : "http://open.spotify.com/user/olliegv1"
+              },
+              "href" : "https://api.spotify.com/v1/users/olliegv1",
+              "id" : "olliegv1",
+              "type" : "user",
+              "uri" : "spotify:user:olliegv1"
+            },
+            "public" : true,
+            "snapshot_id" : "qNHJHpV6duTyamJye7szVxad6/BtenK5GT/IDuv5ZoSIstDDhH2LwTPXRdsAdoF4",
+            "tracks" : {
+              "href" : "https://api.spotify.com/v1/users/olliegv1/playlists/0hH9e93dZkkMvlDpGTVHWE/tracks",
+              "total" : 82
+            },
+            "type" : "playlist",
+            "uri" : "spotify:user:olliegv1:playlist:0hH9e93dZkkMvlDpGTVHWE"
+          }, {
+            "collaborative" : false,
+            "external_urls" : {
+              "spotify" : "http://open.spotify.com/user/spotifydiscover/playlist/5zq3JwoxOaVJpBs5dOYrXx"
+            },
+            "href" : "https://api.spotify.com/v1/users/spotifydiscover/playlists/5zq3JwoxOaVJpBs5dOYrXx",
+            "id" : "5zq3JwoxOaVJpBs5dOYrXx",
+            "images" : [ {
+              "height" : null,
+              "url" : "https://u.scdn.co/images/pl/default/5bf1617ca8cda430c64f3b1e5e802b8d543f712f",
+              "width" : null
+            } ],
+            "name" : "Discover Weekly",
+            "owner" : {
+              "external_urls" : {
+                "spotify" : "http://open.spotify.com/user/spotifydiscover"
+              },
+              "href" : "https://api.spotify.com/v1/users/spotifydiscover",
+              "id" : "spotifydiscover",
+              "type" : "user",
+              "uri" : "spotify:user:spotifydiscover"
+            },
+            "public" : false,
+            "snapshot_id" : "E9z8RfCqzXS+rHUVxT7kx60DhlJt9H4LPcMeBxKjplf+N2J7bIO1ItHQehjB4uig",
+            "tracks" : {
+              "href" : "https://api.spotify.com/v1/users/spotifydiscover/playlists/5zq3JwoxOaVJpBs5dOYrXx/tracks",
+              "total" : 30
+            },
+            "type" : "playlist",
+            "uri" : "spotify:user:spotifydiscover:playlist:5zq3JwoxOaVJpBs5dOYrXx"
+          }, {
+            "collaborative" : false,
+            "external_urls" : {
+              "spotify" : "http://open.spotify.com/user/1295355766/playlist/2PpqAZ8GNmiGuqILaCi3dB"
+            },
+            "href" : "https://api.spotify.com/v1/users/1295355766/playlists/2PpqAZ8GNmiGuqILaCi3dB",
+            "id" : "2PpqAZ8GNmiGuqILaCi3dB",
+            "images" : [ {
+              "height" : 640,
+              "url" : "https://i.scdn.co/image/fee74335e3358836de8241a14f3f44f0ab5c4710",
+              "width" : 640
+            } ],
+            "name" : "Starred",
+            "owner" : {
+              "external_urls" : {
+                "spotify" : "http://open.spotify.com/user/1295355766"
+              },
+              "href" : "https://api.spotify.com/v1/users/1295355766",
+              "id" : "1295355766",
+              "type" : "user",
+              "uri" : "spotify:user:1295355766"
+            },
+            "public" : false,
+            "snapshot_id" : "YqGndJ5mByA8Bl/0Lk4dmKxYcl/gCqzGaaDL36N4lrZkO/Jg/jg/AhxaJs4Rc8f5",
+            "tracks" : {
+              "href" : "https://api.spotify.com/v1/users/1295355766/playlists/2PpqAZ8GNmiGuqILaCi3dB/tracks",
+              "total" : 1
+            },
+            "type" : "playlist",
+            "uri" : "spotify:user:1295355766:playlist:2PpqAZ8GNmiGuqILaCi3dB"
+          }, {
+            "collaborative" : false,
+            "external_urls" : {
+              "spotify" : "http://open.spotify.com/user/easportsaudio/playlist/00i82lDzMDdiHWNjrIGAyw"
+            },
+            "href" : "https://api.spotify.com/v1/users/easportsaudio/playlists/00i82lDzMDdiHWNjrIGAyw",
+            "id" : "00i82lDzMDdiHWNjrIGAyw",
+            "images" : [ {
+              "height" : null,
+              "url" : "https://u.scdn.co/images/pl/default/be4b279ef8a21bddfbea90bbd9f185c75eb3e67f",
+              "width" : null
+            } ],
+            "name" : "FIFA 15 Soundtrack",
+            "owner" : {
+              "external_urls" : {
+                "spotify" : "http://open.spotify.com/user/easportsaudio"
+              },
+              "href" : "https://api.spotify.com/v1/users/easportsaudio",
+              "id" : "easportsaudio",
+              "type" : "user",
+              "uri" : "spotify:user:easportsaudio"
+            },
+            "public" : false,
+            "snapshot_id" : "52TW6Bqc8J/1NMIOrHeabmcmalUdoIQkwnt0vfOcH1dp9O7zAN7ViJW9JMyF6juo",
+            "tracks" : {
+              "href" : "https://api.spotify.com/v1/users/easportsaudio/playlists/00i82lDzMDdiHWNjrIGAyw/tracks",
+              "total" : 40
+            },
+            "type" : "playlist",
+            "uri" : "spotify:user:easportsaudio:playlist:00i82lDzMDdiHWNjrIGAyw"
+          }, {
+            "collaborative" : false,
+            "external_urls" : {
+              "spotify" : "http://open.spotify.com/user/1295355766/playlist/2w2jBrnIEGoqAYRhA4RZb2"
+            },
+            "href" : "https://api.spotify.com/v1/users/1295355766/playlists/2w2jBrnIEGoqAYRhA4RZb2",
+            "id" : "2w2jBrnIEGoqAYRhA4RZb2",
+            "images" : [ {
+              "height" : 640,
+              "url" : "https://mosaic.scdn.co/640/ff0f574924386e6c116794de2abf66e260c8be0cd8fb31456b9ba1a053ae64cfb65d8977601f7071c5d0580a46271304deda91cb203c60ea9395f7a143d68081e4209df8e1c562533951882d5e7b6b95",
+              "width" : 640
+            }, {
+              "height" : 300,
+              "url" : "https://mosaic.scdn.co/300/ff0f574924386e6c116794de2abf66e260c8be0cd8fb31456b9ba1a053ae64cfb65d8977601f7071c5d0580a46271304deda91cb203c60ea9395f7a143d68081e4209df8e1c562533951882d5e7b6b95",
+              "width" : 300
+            }, {
+              "height" : 60,
+              "url" : "https://mosaic.scdn.co/60/ff0f574924386e6c116794de2abf66e260c8be0cd8fb31456b9ba1a053ae64cfb65d8977601f7071c5d0580a46271304deda91cb203c60ea9395f7a143d68081e4209df8e1c562533951882d5e7b6b95",
+              "width" : 60
+            } ],
+            "name" : "HansZimmer",
+            "owner" : {
+              "external_urls" : {
+                "spotify" : "http://open.spotify.com/user/1295355766"
+              },
+              "href" : "https://api.spotify.com/v1/users/1295355766",
+              "id" : "1295355766",
+              "type" : "user",
+              "uri" : "spotify:user:1295355766"
+            },
+            "public" : false,
+            "snapshot_id" : "iT1QVZajmboMBf9fjkJBK8pP+gZyvHNzesim3SlSy7DOLIenILoaEmicVfyXUDrM",
+            "tracks" : {
+              "href" : "https://api.spotify.com/v1/users/1295355766/playlists/2w2jBrnIEGoqAYRhA4RZb2/tracks",
+              "total" : 10
+            },
+            "type" : "playlist",
+            "uri" : "spotify:user:1295355766:playlist:2w2jBrnIEGoqAYRhA4RZb2"
+          }, {
+            "collaborative" : false,
+            "external_urls" : {
+              "spotify" : "http://open.spotify.com/user/billboard.com/playlist/1KPXnsM7qF07oTAEck4k05"
+            },
+            "href" : "https://api.spotify.com/v1/users/billboard.com/playlists/1KPXnsM7qF07oTAEck4k05",
+            "id" : "1KPXnsM7qF07oTAEck4k05",
+            "images" : [ {
+              "height" : null,
+              "url" : "https://u.scdn.co/images/pl/default/d252a7bd9de3e00385b26d76c849e47a6b5d5151",
+              "width" : null
+            } ],
+            "name" : "Top Charting Songs of 2015",
+            "owner" : {
+              "external_urls" : {
+                "spotify" : "http://open.spotify.com/user/billboard.com"
+              },
+              "href" : "https://api.spotify.com/v1/users/billboard.com",
+              "id" : "billboard.com",
+              "type" : "user",
+              "uri" : "spotify:user:billboard.com"
+            },
+            "public" : false,
+            "snapshot_id" : "yeW+/SL3rQEDgVC3MD4AvErRYrHtdNvPQYgZgbVs9Qb4WJcfhyc+lDi1cAVii/5B",
+            "tracks" : {
+              "href" : "https://api.spotify.com/v1/users/billboard.com/playlists/1KPXnsM7qF07oTAEck4k05/tracks",
+              "total" : 25
+            },
+            "type" : "playlist",
+            "uri" : "spotify:user:billboard.com:playlist:1KPXnsM7qF07oTAEck4k05"
+          }, {
+            "collaborative" : false,
+            "external_urls" : {
+              "spotify" : "http://open.spotify.com/user/spotify/playlist/6LBZwjKY0VZLoe79qeGcCF"
+            },
+            "href" : "https://api.spotify.com/v1/users/spotify/playlists/6LBZwjKY0VZLoe79qeGcCF",
+            "id" : "6LBZwjKY0VZLoe79qeGcCF",
+            "images" : [ {
+              "height" : 300,
+              "url" : "https://i.scdn.co/image/36bb2b08f1aa0a8de47897685883cb288e31b1ce",
+              "width" : 300
+            } ],
+            "name" : "Top Tracks in The United States",
+            "owner" : {
+              "external_urls" : {
+                "spotify" : "http://open.spotify.com/user/spotify"
+              },
+              "href" : "https://api.spotify.com/v1/users/spotify",
+              "id" : "spotify",
+              "type" : "user",
+              "uri" : "spotify:user:spotify"
+            },
+            "public" : false,
+            "snapshot_id" : "31l+dwExP9dCUdTNO3ZLNC8rDFb8FtAtYnkOWAY0yqKYSfIP0nKPlo9g6qoxMzb6",
+            "tracks" : {
+              "href" : "https://api.spotify.com/v1/users/spotify/playlists/6LBZwjKY0VZLoe79qeGcCF/tracks",
+              "total" : 50
+            },
+            "type" : "playlist",
+            "uri" : "spotify:user:spotify:playlist:6LBZwjKY0VZLoe79qeGcCF"
+          }, {
+            "collaborative" : false,
+            "external_urls" : {
+              "spotify" : "http://open.spotify.com/user/igor.murta/playlist/2HQbOZSKI6QXsrV70IDqg4"
+            },
+            "href" : "https://api.spotify.com/v1/users/igor.murta/playlists/2HQbOZSKI6QXsrV70IDqg4",
+            "id" : "2HQbOZSKI6QXsrV70IDqg4",
+            "images" : [ {
+              "height" : 640,
+              "url" : "https://mosaic.scdn.co/640/856e5265753f25c1c19ede5be4466f74cfd4d4bfff25f1eb3fd35a96fa9b0949f4f110aae9e9e79b62c6ffb8c0f4cb94651bd88cad441769ff4621f412740bde4b31cc4fbb8697d3d32433450474b912",
+              "width" : 640
+            }, {
+              "height" : 300,
+              "url" : "https://mosaic.scdn.co/300/856e5265753f25c1c19ede5be4466f74cfd4d4bfff25f1eb3fd35a96fa9b0949f4f110aae9e9e79b62c6ffb8c0f4cb94651bd88cad441769ff4621f412740bde4b31cc4fbb8697d3d32433450474b912",
+              "width" : 300
+            }, {
+              "height" : 60,
+              "url" : "https://mosaic.scdn.co/60/856e5265753f25c1c19ede5be4466f74cfd4d4bfff25f1eb3fd35a96fa9b0949f4f110aae9e9e79b62c6ffb8c0f4cb94651bd88cad441769ff4621f412740bde4b31cc4fbb8697d3d32433450474b912",
+              "width" : 60
+            } ],
+            "name" : "Studying, Learning Working",
+            "owner" : {
+              "external_urls" : {
+                "spotify" : "http://open.spotify.com/user/igor.murta"
+              },
+              "href" : "https://api.spotify.com/v1/users/igor.murta",
+              "id" : "igor.murta",
+              "type" : "user",
+              "uri" : "spotify:user:igor.murta"
+            },
+            "public" : false,
+            "snapshot_id" : "Z9qGxAXBiiW6E5NiRa+PxQiIC5MT3hoF7KOJjEjYb7BoYdAjwjD6WfJKWEerduFa",
+            "tracks" : {
+              "href" : "https://api.spotify.com/v1/users/igor.murta/playlists/2HQbOZSKI6QXsrV70IDqg4/tracks",
+              "total" : 128
+            },
+            "type" : "playlist",
+            "uri" : "spotify:user:igor.murta:playlist:2HQbOZSKI6QXsrV70IDqg4"
+          } ],
+          "limit" : 20,
+          "next" : null,
+          "offset" : 0,
+          "previous" : null,
+          "total" : 8
+        }
+    http_version: 
+  recorded_at: Fri, 24 Jun 2016 23:07:10 GMT
+recorded_with: VCR 3.0.3

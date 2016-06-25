@@ -1,0 +1,26 @@
+<% if current_user %>
+  <div class="page-header">
+    <h1>Here is some info about you...</h1>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <ul>
+        <li><strong>Name:</strong> <%= @user.name %></li>
+        <li><strong>Provider:</strong> <%= @user.provider %></li>
+        <li><strong>uID:</strong> <%= @user.uid %></li>
+        <li><strong>Email:</strong> <%= @user.email %></li>
+        <li><strong>Spotify URL:</strong> <%= link_to "Open Spotify", @current_user.spotify_url, target: "_blank" %></li>
+        <li><%= image_tag current_user.image_url, alt: @current_user.name %></li>
+      </ul>
+    </div>
+  </div>
+
+  <% if @playlists.present? %>
+    <div class="playlists">
+      <%= render partial: 'playlists', locals: { playlists: @playlists} %>
+    </div>
+  <% end %>
+
+<% else %>
+  <%= render 'pages/welcome' %>
+<% end %>
